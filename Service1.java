@@ -9,12 +9,10 @@ public class Service1 {
 
   public void addStudent(Student student) throws IOException {
     var f = new FileWriter("db.txt", true);
-    var c = new FileWriter("db.txt", true);
     var b = new BufferedWriter(f);
     b.append(student.ToString());
     b.newLine();
     b.close();
-    c.close();
   }
 
   public Collection<Student> getStudents() throws IOException {
