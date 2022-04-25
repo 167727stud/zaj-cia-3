@@ -6,13 +6,19 @@ import java.util.Scanner;
 public class Service3 {
 
     public static void poszukajse(String fileName,String wyszukiwana) throws FileNotFoundException{
+      int licznik=0;
         Scanner scan = new Scanner(new File(fileName));
         while(scan.hasNext()){
             String line = scan.nextLine().toLowerCase().toString();
             if(line.contains(wyszukiwana)){
                 System.out.println(line);
+              licznik++;
             }
         }
+      if(licznik==0){
+        System.out.println("nie znaleziono nic");
+      }
+        
     }
 
 
@@ -30,7 +36,7 @@ public class Service3 {
         }
     catch (FileNotFoundException e)  
     {
-         System.out.println(wysz);
+         System.out.println("nie znaleziono");
     }
     }
 
