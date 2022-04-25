@@ -9,8 +9,10 @@ class Main {
    System.out.print( "2:wypisz  studentów ale nie działa");
   System.out.print(System.lineSeparator());
      System.out.print( "3:Wypisuje studentów ale działa w przeciwieństwie do case 2");
+  // ta funkcja wypisuje cały plik 
+ //nie zważa na to czy poszczególne dane są tam datą wiekiem czy nazwiskiem
   System.out.print(System.lineSeparator());
-       System.out.print( "4:Wypisuje studentów ale działa w przeciwieństwie do case 2");
+       System.out.print( "4:Wyszukuje po imieniu lub/i nazwisko można wyszukiwanie po roku też w miarę działa ");
   System.out.print(System.lineSeparator());
   Service1 s = new Service1();
   int mem =1;
@@ -37,10 +39,7 @@ class Main {
      s.addStudent(new Student(wpis,wpis2,wiek,wpis3));
             }
             
-      catch (IOException e) {
-
-
-        }
+      catch (IOException e) {}
     break;
     case 2:
        
@@ -57,6 +56,12 @@ class Main {
       {
         Service2.service2();
       }
+         case 4:
+       try {
+        Service3.service3();
+           }
+       catch (IOException e) {}
+      
       
       break;
   }

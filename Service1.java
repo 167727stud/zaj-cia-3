@@ -16,6 +16,7 @@ public class Service1 {
   }
 
   public Collection<Student> getStudents() throws IOException {
+       System.out.print( "Jak pisałem nie działą");
     var ret = new ArrayList<Student>();
     var f = new FileReader("db.txt");
     var reader = new BufferedReader(f);
@@ -31,6 +32,9 @@ public class Service1 {
   }
 
   public Student findStudentByName(String name) {
+
+        
+  
     return null;
   }
 }
