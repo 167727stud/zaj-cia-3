@@ -6,7 +6,7 @@ class Main {
 { 
    System.out.print( "1:wpisz imie nazwisko i wiek");
   System.out.print(System.lineSeparator());
-   System.out.print( "2:wypisz  studentów");
+   System.out.print( "2:wypisz  studentów ale nie działa");
   System.out.print(System.lineSeparator());
      System.out.print( "3:Wypisuje studentów ale działa w przeciwieństwie do case 2");
   System.out.print(System.lineSeparator());
